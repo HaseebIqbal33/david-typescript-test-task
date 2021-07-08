@@ -30,21 +30,31 @@ function App() {
     <div className="container">
       <div className="content-wrapper">
         <div className="fields-container">
-          <Input
-            type="number"
-            name="num1"
-            value={num1}
-            onChange={(e) => setNum1(e.target.value)}
-          />
-          <span className="custom-icon">+</span>
-          <Input
-            type="number"
-            name="num2"
-            value={num2}
-            onChange={(e) => setNum2(e.target.value)}
-          />
-          <span className="custom-icon"> = </span>
-          <input type="text" readOnly value={ans} />
+          <div>
+            <Input
+              type="number"
+              name="num1"
+              value={num1}
+              onChange={(e) => setNum1(e.target.value)}
+            />
+          </div>
+          <div>
+            <span className="custom-icon">+</span>
+          </div>
+          <div>
+            <Input
+              type="number"
+              name="num2"
+              value={num2}
+              onChange={(e) => setNum2(e.target.value)}
+            />
+          </div>
+          <div>
+            <span className="custom-icon"> = </span>
+          </div>
+          <div>
+            <input type="text" readOnly value={ans} />
+          </div>
         </div>
 
         <div className="btn-container">
